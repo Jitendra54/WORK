@@ -2,7 +2,7 @@
   "pars":
   {
     "local_server": "True",
-    "local_uri": "mysql://root:@localhost/stackwebsite",
+    "local_uri": "mysql://nano:ninja@123@localhost/stackwebsite",
     "prod_uri": "",
     "blog_name": "Stack Website",
     "sub_name": "Stack Of Top 10 Websites",
