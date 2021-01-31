@@ -1,0 +1,26 @@
+{
+  "pars":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/stackwebsite",
+    "prod_uri": "",
+    "blog_name": "Stack Website",
+    "sub_name": "Stack Of Top 10 Websites",
+    "fb": "https://www.facebook.com/mark.due.75",
+    "tw": "https://twitter.com/mark4505450471",
+    "gh": "https://github.com/practice56/",
+    "g_user": "nishad.jitendra@asmedu.org",
+    "g_pas": "Midoriya@123",
+    "p_sub":"This is sub heading of post",
+    "a_con": "This website is created as small project with the help of my friend. The only motto of this website is to provide you stack of top ten usefull websites. this is just a start and I am going to increase the stack of website and try to provide you better user interface.If you guys have some suggestion for me please contact me in through contact section of this website.",
+    "no_p": 10,
+    "l_img": "l.svg",
+    "alert": "Admin ID or Password is wrong",
+    "admin": "metal45",
+    "passd": "open",
+    "Note": "NOTE: If you can't see the logo of website on top means its url is change or its down",
+    "post": "posts=posts, docs=docs,movies =movies,codes=codes"
+
+  }
+
+}

@@ -1,0 +1,47 @@
+/*Top anime content*/
+div.ex3 {width:1200px;height:500px;overflow:scroll;margin-left:-200px;background-color:#f2f2f2;}
+div.c{float: left;width: 33.33%; padding: 5px;}
+div.r{float: left;width: 100px; padding: 5px;}
+
+
+/*menu*/
+.vertical-menu {
+  width: 300px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  display:block;
+}
+
+.vertical-menu a {
+  background-color:  #f2f2f2;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #e6b800;
+}
+
+
+/*postion*/
+ td {
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .vertical-menu {padding-top: 15px;}
+  .vertical-menu  {font-size: 18px;}
+
+
+/*alink*/
+a.one:link {color:#00b8e6;}
+a.one:visited {color:#0000ff;}
+
+

@@ -1,0 +1,248 @@
+{% extends "skeleton.html" %}
+ {% block body %}
+
+  <!-- Page Header-->
+<header class="masthead" style="background-image: url('{{url_for('static',filename='img/home-bg.jpg')}}')"
+        xmlns="http://www.w3.org/1999/html">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{pars['blog_name']}}</h1>
+            <span class="subheading">{{pars['sub_name']}}</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+<!--Menu-->
+<table border="1"><tr>
+
+    <td>
+        <div class="sidenav">
+    <div class="vertical-menu">
+  <a href="#" class="active">Menu</a>
+  <a href="#1">Top Anime Website</a>
+  <a href="#2">Top Document Process Website</a>
+  <a href="#3">Top Movies Download Website</a>
+  <a href="#4">Top learn coding Website</a>
+  <a href="#5">Top Youtube offline Website</a>
+  <a href="#6">Top online games Website</a>
+  <a href="#7">Top Game Downlaod Website</a>
+  <a href="#8">Top software download Website</a>
+  <a href="#9">Top college search Website</a>
+  <a href="#10">Top free WebHosting Website</a>
+    </div>
+        </div>>
+    </td> <div>
+  <!--contain-->
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-10 mx-auto">
+
+        <h1>Top Anime Website</h1>
+    <div class="ex3">
+    <a id="1">
+    <div>
+         {% for post in posts %}
+     <div class="c">
+         {% set fname='img/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+    <div class="r"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr>
+    {% endfor %}
+</div>
+</div></a>
+
+
+ <a id="2">
+  <br><br> <br><h1>Top Document Process Website</h1>
+ <div class="ex3">
+    <div>
+         {% for post in docs %}
+      <div class="c"">
+         {% set fname='img/doc/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+    <div class="r"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+     <a id="3">
+  <br><br> <br><h1>Top Movies Download Website</h1>
+ <div class="ex3">
+    <div>
+         {% for post in movies %}
+       <div class="c">
+         {% set fname='img/movie/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+     <div class="r"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="4">
+  <br><br> <br><h1>Top Learn Coding Website</h1>
+ <div class="ex3">
+    <div>
+         {% for post in codes %}
+       <div class="c">
+         {% set fname='img/code/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+     <div class="r"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="5">
+  <br><br> <br><h1>Top Youtube offline Website</h1>
+  <div class="ex3">
+    <div>
+         {% for post in ytofs %}
+       <div class="c">
+         {% set fname='img/ytof/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+     <div class="r"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="6">
+  <br><br> <br><h1>Top online games Website</h1>
+  <div class="ex3">
+    <div>
+         {% for post in ogames %}
+      <div class="c">
+         {% set fname='img/ogame/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+     <div class="r"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="7">
+  <br><br> <br><h1>Top Game Downlaod Website</h1>
+  <div class="ex3">
+    <div>
+         {% for post in gameds %}
+      <div class="c">
+         {% set fname='img/gamed/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+     <div class="r"><img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="8">
+  <br><br> <br><h1>Top software download Website</h1>
+ <div style="width:1200px;height:500px;overflow:scroll;margin-left:-200px;background-color:#f2f2f2;">
+    <div>
+         {% for post in soft %}
+      <div style="float: left;width: 33.33%; padding: 5px">
+         {% set fname='img/soft/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+    <div style="   float: left;width: 100px; padding: 5px"> <img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="9">
+  <br><br> <br><h1>Top college search Website</h1>
+  <div class="ex3">
+    <div>
+         {% for post in coll %}
+      <div class="c">
+         {% set fname='img/col/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+    <div class="r"><img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+         <a id="10">
+  <br><br> <br><h1>Top free WebHosting Website</h1>
+  <div class="ex3">
+    <div>
+         {% for post in hosts %}
+       <div class="c">
+         {% set fname='img/host/'+post.img %}
+    <img src="{{url_for('static',filename=fname)}}" height="300px" width="300px"/>
+     </div>
+    <div class="r"><img src="{{post.logo}}" height="50px"/></div><br><br>
+    <a href="{{post.title}}" target="_blank" style="color:#00b8e6;text-decoration:none;vlink:#800060">{{post.link}}</a>
+    <p>{{post.content}}</p>
+    <b style="color:orange">{{pars['Note']}}</b>
+<br><hr></a>
+    {% endfor %}
+</div>
+  </div>
+
+
+</div>
+</div>
+</div>
+</td></tr></table>
+
+
+        <!-- Pager -->
+        <div class="clearfix">
+
+        </div>
+      </div>
+{% endblock %}
