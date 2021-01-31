@@ -1,7 +1,7 @@
 {
   "pars":
   {
-    "local_server": "True",
+    "local_server": "Flase",
     "local_uri": "mysql://nano:ninja@123@localhost/stackwebsite",
     "prod_uri": "",
     "blog_name": "Stack Website",
